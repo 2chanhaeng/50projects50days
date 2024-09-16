@@ -1,16 +1,21 @@
-const NODES = 4;
+import { joinElements } from "@/lib/utils";
+import Divider from "./components/Divider";
+import Node from "./components/Node";
+import Radio from "./components/Radio";
+
+const NODES = 5;
 
 export default async function Day02() {
   return (
-    <main className="h-screen flex justify-center content-center">
-      {Array.from({ length: NODES }).map((_, i) => (
-        <span
-          key={i}
-          className="size-16 p-2 rounded-full border-4 border-blue-500 text-4xl font-bold text-center"
-        >
-          {i + 1}
-        </span>
-      ))}
+    <main className="h-screen flex justify-center content-center origin-center">
+      {joinElements(Divider)(
+        Array.from({ length: NODES }).map((_, i) => (
+          <>
+            <Node value={i + 1} />
+            <Radio checked={i === 0} />
+          </>
+        ))
+      )}
     </main>
   );
 }
