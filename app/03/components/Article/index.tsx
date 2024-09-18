@@ -4,7 +4,7 @@ import NavButton from "../NavButton";
 
 export default function Article() {
   return (
-    <article className="px-12 py-24 flex flex-col max-w-3xl gap-2 bg-background origin-top-left has-[:checked]:-rotate-12 ease-in-out duration-300 z-10">
+    <article className="px-12 py-24 flex flex-col w-screen gap-2 bg-background origin-top-left has-[:checked]:-rotate-12 ease-in-out duration-300 z-10">
       <h1 className="text-4xl font-bold">Day 03</h1>
       <h2 className="text-sm italic">Lorem ipsum</h2>
       <p>
