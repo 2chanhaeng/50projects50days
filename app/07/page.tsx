@@ -35,13 +35,13 @@ const items = [
   {
     name: "Samsung Galaxy S24 Ultra",
     url: "https://www.samsung.com/sec/smartphones/galaxy-s24-ultra/",
-    color: "bg-blue-500",
+    color: "bg-blue-500/50",
     image: "url('https://chomu.dev/50projects50days/galaxy-s24-ultra.jpg')",
   },
   {
     name: "Apple iPhone 16 Pro",
     url: "https://www.apple.com/iphone-16-pro/",
-    color: "bg-gray-500",
+    color: "bg-gray-500/50",
     image: "url('https://chomu.dev/50projects50days/iphone-16-pro.jpg')",
   },
 ];
