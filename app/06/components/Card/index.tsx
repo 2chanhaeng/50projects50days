@@ -5,8 +5,9 @@ import { useInView } from "./hooks";
 
 export default function Card({ isLeft }: { isLeft: boolean }) {
   const { inView, ref } = useInView();
+  const initMargin = isLeft ? "marginLeft" : "marginRight";
   const margin = isLeft ? "margin-left" : "margin-right";
-  const style = { [margin]: "200vw" };
+  const style = { [initMargin]: "200vw" };
 
   useEffect(
     () => ref.current?.style.setProperty(margin, inView ? "0" : "200vw"),
