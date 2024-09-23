@@ -6,6 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "serve": "npx serve out",
+    "bs": "yarn build && yarn serve",
     "lint": "next lint"
   },
   "dependencies": {
