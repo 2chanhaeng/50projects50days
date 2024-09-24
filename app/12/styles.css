@@ -1,0 +1,15 @@
+main {
+  @apply flex-col m-auto w-1/2 min-w-96 items-stretch;
+}
+
+details {
+  @apply border rounded-xl p-2 m-2 open:bg-foreground open:text-background open:shadow-xl ease-in-out duration-300;
+}
+
+summary {
+  @apply font-bold text-2xl;
+}
+
+p {
+  @apply text-xl;
+}
