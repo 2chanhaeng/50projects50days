@@ -4,7 +4,7 @@ export const useCounter = () => {
   const [count, setCount] = useState(0);
   useEffect(() => {
     const interval = setInterval(() => {
-      if (count > 100) clearInterval(interval);
+      if (count > 100) return clearInterval(interval);
       setCount((count) => count + 1);
     }, 100);
     return () => clearInterval(interval);
