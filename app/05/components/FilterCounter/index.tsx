@@ -16,8 +16,11 @@ export default function FilterCounter() {
 function Counter({ count }: { count: number }) {
   if (count > 100) return null;
   return (
-    <span className="text-9xl font-bold">
+    <span className="text-9xl font-bold" style={{ opacity: opacity(count) }}>
       {String(count).padStart(2, "0")}%
     </span>
   );
 }
+
+const opacity = (count: number) =>
+  count < 67 ? 1 - count / 200 : 2 - count / 50;
